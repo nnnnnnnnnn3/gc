@@ -1,14 +1,14 @@
 QT += widgets
 
 HEADERS       = \
-                lateralboard.h \
-                line.h \
-                mainboard.h \
+                graphics_h/line.h \
+                projections_h/lateralboard.h \
+                projections_h/mainboard.h \
                 window.h
 SOURCES       = main.cpp \
-                lateralboard.cpp \
-                line.cpp \
-                mainboard.cpp \
+                graphics/line.cpp \
+                projections/lateralboard.cpp \
+                projections/mainboard.cpp \
                 window.cpp
 
 # install
