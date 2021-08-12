@@ -1,4 +1,4 @@
-#include "line.h"
+#include "graphics_h/line.h"
 #include <QtCore>
 
 int Line::minX() const

@@ -1,10 +1,12 @@
-#include "mainboard.h"
-#include "lateralboard.h"
+#include "projections_h/mainboard.h"
+#include "projections_h/lateralboard.h"
 #include <QKeyEvent>
 #include <QGridLayout>
 #include <QLabel>
 #include <QPainter>
 #include <QFrame>
+#include "graphics_h/line.h"
+#include "graphics_h/point.h"
 
 MainBoard::MainBoard(QWidget *parent)
     : QFrame(parent), isStarted(false)
@@ -31,12 +33,15 @@ void MainBoard::start()
     isStarted = true;
     clearBoard();
     emit levelChanged(1);
+
 }
 
 void MainBoard::paintEvent(QPaintEvent *event)
 {
     QFrame::paintEvent(event);
     QPainter painter(this);
+
+    p.putPixel(painter,100,100);
 }
 
 

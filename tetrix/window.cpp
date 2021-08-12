@@ -1,4 +1,4 @@
-#include "mainboard.h"
+#include "projections_h/mainboard.h"
 #include "window.h"
 #include <QCoreApplication>
 #include <QGridLayout>

@@ -4,7 +4,6 @@
 #include <QBasicTimer>
 #include <QFrame>
 #include <QPointer>
-#include "line.h"
 
 QT_BEGIN_NAMESPACE
 class QLabel;

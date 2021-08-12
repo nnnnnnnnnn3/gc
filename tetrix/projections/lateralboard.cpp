@@ -1,4 +1,4 @@
-#include "lateralboard.h"
+#include "projections_h/lateralboard.h"
 #include <QKeyEvent>
 #include <QLabel>
 #include <QPainter>

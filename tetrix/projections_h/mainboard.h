@@ -4,7 +4,8 @@
 #include <QBasicTimer>
 #include <QFrame>
 #include <QPointer>
-#include "line.h"
+#include "graphics_h/line.h"
+#include "graphics_h/point.h"
 #include "lateralboard.h"
 
 QT_BEGIN_NAMESPACE
@@ -20,7 +21,7 @@ public:
     QSize sizeHint() const override;
     QSize minimumSizeHint() const override;
     LateralBoard lateralBoard;
-
+    Point p;
 public slots:
     void start();
 
